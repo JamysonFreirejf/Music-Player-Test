@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PairingView" customModule="Music_Player_Test" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="TKD-YN-lUq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image 2" translatesAutoresizingMaskIntoConstraints="NO" id="WVX-3u-eau">
+                    <rect key="frame" x="20" y="44" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="81E-bn-9vD"/>
+                        <constraint firstAttribute="width" constant="24" id="hLh-Vf-84q"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPhone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Y7-pk-yJU">
+                    <rect key="frame" x="56" y="99" width="50" height="22"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image 2" translatesAutoresizingMaskIntoConstraints="NO" id="Iog-fY-i6A">
+                    <rect key="frame" x="20" y="98" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="NNI-V6-fvi"/>
+                        <constraint firstAttribute="height" constant="24" id="dmu-Wq-wBJ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple Tv" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cc-jh-r3x">
+                    <rect key="frame" x="56" y="44" width="65.5" height="22"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="8Y7-pk-yJU" firstAttribute="leading" secondItem="Iog-fY-i6A" secondAttribute="trailing" constant="12" id="7HF-nB-43A"/>
+                <constraint firstItem="WVX-3u-eau" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="HxL-sV-yQu"/>
+                <constraint firstItem="WVX-3u-eau" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="IIM-v7-Auh"/>
+                <constraint firstItem="2cc-jh-r3x" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="LmG-ti-3MK"/>
+                <constraint firstItem="8Y7-pk-yJU" firstAttribute="centerY" secondItem="Iog-fY-i6A" secondAttribute="centerY" id="Zit-yQ-JVH"/>
+                <constraint firstItem="Iog-fY-i6A" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="d4x-ce-kB1"/>
+                <constraint firstItem="Iog-fY-i6A" firstAttribute="top" secondItem="WVX-3u-eau" secondAttribute="bottom" constant="30" id="ft5-xG-zM7"/>
+                <constraint firstItem="2cc-jh-r3x" firstAttribute="leading" secondItem="WVX-3u-eau" secondAttribute="trailing" constant="12" id="mEf-gL-mVM"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="89"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Image 2" width="24" height="24"/>
+    </resources>
+</document>
